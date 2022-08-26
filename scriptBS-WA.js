@@ -6,7 +6,7 @@ let escaliers;
 let welcome;
 
 WA.room.onEnterLayer("_prompt_escaliers").subscribe(() => {
-    escaliers = WA.ui.openPopup("promptEscaliers", "Désolé, le 1er étage n'est pas encore accessible :-(", [{
+    escaliers = WA.ui.openPopup("promptEscaliers", "Toutes nos excuses, le 1er étage est en travaux ! Revenez un peu plus tard.", [{
         label: "Tant pis",
         className: "primary",
         callback: (popup) => {
