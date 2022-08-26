@@ -380,7 +380,7 @@
                 {
                  "name":"openWebsiteClosable",
                  "type":"bool",
-                 "value":true
+                 "value":false
                 }],
          "type":"tilelayer",
          "visible":true,
