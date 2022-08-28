@@ -21,6 +21,7 @@ WA.room.onLeaveLayer("_prompt_escaliers").subscribe(() => {
     escaliers.close();
 })
 
+
 WA.room.onEnterLayer("_prompt_welcome").subscribe(() => {
     welcome = WA.ui.openPopup("promptWelcome", "test", [{
         label: "Tant pis",
