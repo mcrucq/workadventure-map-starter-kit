@@ -39,6 +39,10 @@ WA.room.onLeaveLayer("_prompt_welcome").subscribe(() => {
 })
 
 
+//WA.chat.sendChatMessage('Bonjour, et bienvenue chez Brainsonic', 'Garance');
+//WA.chat.sendChatMessage('test 2', 'Garance');
+
+
 
 class Popup {
 

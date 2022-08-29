@@ -524,7 +524,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/www.echecs-online.eu\/game\/match"
+                 "value":"https:\/\/lichess.org\/training\/daily"
                 }],
          "type":"tilelayer",
          "visible":true,
