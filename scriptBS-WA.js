@@ -23,8 +23,8 @@ WA.room.onLeaveLayer("_prompt_escaliers").subscribe(() => {
 
 
 WA.room.onEnterLayer("_prompt_welcome").subscribe(() => {
-    welcome = WA.ui.openPopup("promptWelcome", "test", [{
-        label: "Tant pis",
+    welcome = WA.ui.openPopup("promptWelcome", "Bienvenue chez Brainsonic ! RDV à notre accueil pour obtenir quelques conseils pratiques !", [{
+        label: "J'ai compris !",
         className: "primary",
         callback: (popup) => {
             // Close the popup when the "Close" button is pressed.
