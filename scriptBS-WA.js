@@ -5,13 +5,14 @@ import { } from "https://unpkg.com/@workadventure/scripting-api-extra@^1";
 let escaliers;
 let welcome;
 let msgGuillaume;
+let userName;
 
 WA.room.onEnterLayer("_website_perso_guillaumeM_tribune").subscribe(() => {
-    msgGuillaume = WA.ui.openPopup("messageGuillaume", "Guillaume Mikowski : 'Norme ISO 20121 : on nous prend vraiment pour des cons ! Je vous en parle sur Linkedin !''", [{
+    msgGuillaume = WA.ui.openPopup("messageGuillaume", "Guillaume Mikowski : 'Norme ISO 20121, on nous prend vraiment pour des cons ! Je vous en parle sur Linkedin.''", [{
         label: "Je veux la lire",
         className: "primary",
         callback: (popup) => {
-            window.open("https://www.linkedin.com/pulse/norme-iso-20121-nous-prend-vraiment-pour-des-cons-mikowski-/");
+            WA.nav.openTab("https://www.linkedin.com/pulse/norme-iso-20121-nous-prend-vraiment-pour-des-cons-mikowski-/");
         }
     }]);
 });
@@ -37,9 +38,13 @@ WA.room.onLeaveLayer("_prompt_escaliers").subscribe(() => {
     escaliers.close();
 })
 
+WA.onInit().then(() => {
+    userName = WA.player.name;
+    //WA.player.setOutlineColor(255, 153, 51);
+});
 
 WA.room.onEnterLayer("_prompt_welcome").subscribe(() => {
-    welcome = WA.ui.openPopup("promptWelcome", "Bienvenue chez Brainsonic ! RDV à notre accueil pour obtenir quelques conseils pratiques !", [{
+    welcome = WA.ui.openPopup("promptWelcome", "Bonjour " + userName + ", et bienvenue chez Brainsonic ! RDV à notre accueil pour obtenir quelques conseils pratiques !", [{
         label: "J'ai compris !",
         className: "primary",
         callback: (popup) => {
