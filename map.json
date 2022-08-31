@@ -1059,7 +1059,7 @@
                         {
                          "name":"url",
                          "type":"string",
-                         "value":"https:\/\/i.ibb.co\/xGCqXLm\/countdown-wa-cinema.gif"
+                         "value":"https:\/\/mcrucq.github.io\/workadventure-map-starter-kit\/gif\/countdown-wa-cinema-mat.gif"
                         }],
                  "rotation":0,
                  "type":"website",
@@ -1072,6 +1072,12 @@
                  "height":293,
                  "id":39,
                  "name":"PopRoom",
+                 "properties":[
+                        {
+                         "name":"jitsiRoom",
+                         "type":"string",
+                         "value":""
+                        }],
                  "rotation":0,
                  "type":"area",
                  "visible":true,
@@ -1083,6 +1089,12 @@
                  "height":195,
                  "id":42,
                  "name":"LegoRoom",
+                 "properties":[
+                        {
+                         "name":"jitsiRoom",
+                         "type":"string",
+                         "value":""
+                        }],
                  "rotation":0,
                  "type":"area",
                  "visible":true,
