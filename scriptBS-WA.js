@@ -4,6 +4,22 @@ import { } from "https://unpkg.com/@workadventure/scripting-api-extra@^1";
 //Prompt des zones
 let escaliers;
 let welcome;
+let msgGuillaume;
+
+WA.room.onEnterLayer("_website_perso_guillaumeM_tribune").subscribe(() => {
+    msgGuillaume = WA.ui.openPopup("messageGuillaume", "Guillaume Mikowski : 'Norme ISO 20121 : on nous prend vraiment pour des cons ! Je vous en parle sur Linkedin !''", [{
+        label: "Je veux la lire",
+        className: "primary",
+        callback: (popup) => {
+            window.open("https://www.linkedin.com/pulse/norme-iso-20121-nous-prend-vraiment-pour-des-cons-mikowski-/");
+        }
+    }]);
+});
+
+// Close the popup when we leave the zone.
+WA.room.onLeaveLayer("_website_perso_guillaumeM_tribune").subscribe(() => {
+    msgGuillaume.close();
+})
 
 WA.room.onEnterLayer("_prompt_escaliers").subscribe(() => {
     escaliers = WA.ui.openPopup("promptEscaliers", "Toutes nos excuses, le 1er étage est en travaux ! Revenez un peu plus tard.", [{
