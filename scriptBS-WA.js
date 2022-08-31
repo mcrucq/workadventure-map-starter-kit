@@ -70,24 +70,7 @@ class Popup {
     close() {};
 }
 
-/*let escaliers;
-
-WA.room.onEnterLayer("_prompt_escaliers").subscribe(() => {
-    escaliers = WA.ui.openPopup("promptEscaliers", "Désolé, le 1er étage n'est pas encore accessible :-(", [{
-        label: "Close",
-        className: "primary",
-        callback: (popup) => {
-            // Close the popup when the "Close" button is pressed.
-            popup.close();
-        }
-    }]);
+WA.room.onEnterLayer('_VIP_nowebcam').subscribe(() => {
+  WA.controls.turnOffMicrophone();
+ WA.controls.turnOffWebcam();
 });
-
-// Close the popup when we leave the zone.
-WA.room.onLeaveLayer("myZone").subscribe(() => {
-    escaliers.close();
-})
-
-class Popup {
-    close() {};
-} */
