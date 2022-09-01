@@ -1091,13 +1091,19 @@
                 {
                  "height":145,
                  "id":37,
-                 "name":"messageGuillaume",
+                 "name":"messageGuillaumeTw",
+                 "properties":[
+                        {
+                         "name":"url",
+                         "type":"string",
+                         "value":"https:\/\/mcrucq.github.io\/workadventure-map-starter-kit\/gif\/tweetGui.png"
+                        }],
                  "rotation":0,
-                 "type":"",
+                 "type":"website",
                  "visible":true,
                  "width":234,
-                 "x":1073,
-                 "y":1001
+                 "x":1273,
+                 "y":1101
                 }, 
                 {
                  "height":58,
@@ -1187,6 +1193,17 @@
                  "width":162,
                  "x":262,
                  "y":1481
+                }, 
+                {
+                 "height":145,
+                 "id":45,
+                 "name":"messageGuillaume",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":234,
+                 "x":1073,
+                 "y":1001
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -1231,7 +1248,7 @@
          "y":0
         }],
  "nextlayerid":125,
- "nextobjectid":45,
+ "nextobjectid":46,
  "orientation":"orthogonal",
  "properties":[
         {
