@@ -8,6 +8,7 @@ let msgGuillaume;
 let userName;
 let msgFlavien;
 
+
 WA.room.onEnterLayer("_website_perso_guillaumeM_tribune").subscribe(() => {
     msgGuillaume = WA.ui.openPopup("messageGuillaume", "Guillaume Mikowski : 'Norme ISO 20121, on nous prend vraiment pour des cons ! Je vous en parle sur Linkedin.''", [{
         label: "Je veux la lire",
@@ -16,6 +17,7 @@ WA.room.onEnterLayer("_website_perso_guillaumeM_tribune").subscribe(() => {
             WA.nav.openTab("https://www.linkedin.com/pulse/norme-iso-20121-nous-prend-vraiment-pour-des-cons-mikowski-/");
         }
     }]);
+
 });
 
 // Close the popup when we leave the zone.
@@ -66,6 +68,7 @@ WA.room.onEnterLayer("_prompt_welcome").subscribe(() => {
         callback: (popup) => {
             // Close the popup when the "Close" button is pressed.
             popup.close();
+
         }
     }]);
 });
@@ -80,14 +83,11 @@ WA.room.onLeaveLayer("_prompt_welcome").subscribe(() => {
 //WA.chat.sendChatMessage('test 2', 'Garance');
 
 
+WA.room.onEnterLayer("_action_GuyBrush").subscribe(() => {
+    WA.chat.sendChatMessage("Salut l'ami, je suis Guybrush Threepwood !" , "Guybrush Threepwood");
+});
 
 class Popup {
 
     close() {};
 }
-
-WA.room.onEnterLayer('_VIP_nowebcam').subscribe(() => {
-  WA.controls.turnOffMicrophone();
- WA.controls.turnOffWebcam();
-
-});
