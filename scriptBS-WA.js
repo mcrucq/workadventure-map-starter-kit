@@ -6,6 +6,7 @@ let escaliers;
 let welcome;
 let msgGuillaume;
 let userName;
+let msgFlavien;
 
 WA.room.onEnterLayer("_website_perso_guillaumeM_tribune").subscribe(() => {
     msgGuillaume = WA.ui.openPopup("messageGuillaume", "Guillaume Mikowski : 'Norme ISO 20121, on nous prend vraiment pour des cons ! Je vous en parle sur Linkedin.''", [{
@@ -20,6 +21,21 @@ WA.room.onEnterLayer("_website_perso_guillaumeM_tribune").subscribe(() => {
 // Close the popup when we leave the zone.
 WA.room.onLeaveLayer("_website_perso_guillaumeM_tribune").subscribe(() => {
     msgGuillaume.close();
+})
+
+WA.room.onEnterLayer("_website_perso_flav").subscribe(() => {
+    msgFlavien = WA.ui.openPopup("messageFlavien", "Flavien Lefort : Evénement digital, ce que 20 ans (ou presque) nous ont appris - à lire sur Linkedin", [{
+        label: "Je veux la lire",
+        className: "primary",
+        callback: (popup) => {
+            WA.nav.openTab("https://www.linkedin.com/pulse/ev%C3%A9nement-digital-ce-que-20-ans-ou-presque-nous-ont-appris-lefort/?originalSubdomain=fr");
+        }
+    }]);
+});
+
+// Close the popup when we leave the zone.
+WA.room.onLeaveLayer("_website_perso_flav").subscribe(() => {
+    msgFlavien.close();
 })
 
 WA.room.onEnterLayer("_prompt_escaliers").subscribe(() => {
@@ -73,4 +89,5 @@ class Popup {
 WA.room.onEnterLayer('_VIP_nowebcam').subscribe(() => {
   WA.controls.turnOffMicrophone();
  WA.controls.turnOffWebcam();
+
 });
