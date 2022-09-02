@@ -83,9 +83,7 @@ WA.room.onLeaveLayer("_prompt_welcome").subscribe(() => {
 //WA.chat.sendChatMessage('test 2', 'Garance');
 
 
-WA.room.onEnterLayer("_action_GuyBrush").subscribe(() => {
-    WA.chat.sendChatMessage("Salut l'ami, je suis Guybrush Threepwood !" , "Guybrush Threepwood");
-});
+
 
 class Popup {
 
