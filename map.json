@@ -3384,6 +3384,30 @@
                 {
                  "animation":[
                         {
+                         "duration":1000,
+                         "tileid":5319
+                        }, 
+                        {
+                         "duration":1000,
+                         "tileid":5320
+                        }],
+                 "id":5319
+                }, 
+                {
+                 "animation":[
+                        {
+                         "duration":1000,
+                         "tileid":5412
+                        }, 
+                        {
+                         "duration":1000,
+                         "tileid":5413
+                        }],
+                 "id":5412
+                }, 
+                {
+                 "animation":[
+                        {
                          "duration":200,
                          "tileid":5500
                         }, 
@@ -3408,6 +3432,18 @@
                          "tileid":6430
                         }],
                  "id":5500
+                }, 
+                {
+                 "animation":[
+                        {
+                         "duration":1000,
+                         "tileid":5505
+                        }, 
+                        {
+                         "duration":1000,
+                         "tileid":5506
+                        }],
+                 "id":5505
                 }, 
                 {
                  "animation":[
