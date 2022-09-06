@@ -1657,7 +1657,7 @@
                         {
                          "name":"jitsiTriggerMessage",
                          "type":"string",
-                         "value":"Voulez-vous lancer la conf\u00e9rence en VIP Room"
+                         "value":"Voulez-vous lancer la conf\u00e9rence en VIP Room ?"
                         }],
                  "rotation":0,
                  "type":"area",
@@ -1851,7 +1851,7 @@
                         {
                          "name":"jitsiTriggerMessage",
                          "type":"string",
-                         "value":"Voulez-vous lancer la conf\u00e9rence en Pop Room"
+                         "value":"Voulez-vous lancer la conf\u00e9rence en Pop Room ?"
                         }],
                  "rotation":0,
                  "type":"area",
@@ -1878,7 +1878,7 @@
                         {
                          "name":"jitsiTriggerMessage",
                          "type":"string",
-                         "value":"Voulez-vous lancer la conf\u00e9rence en Lego Room"
+                         "value":"Voulez-vous lancer la conf\u00e9rence en Lego Room ?"
                         }],
                  "rotation":0,
                  "type":"area",
@@ -1905,7 +1905,7 @@
                         {
                          "name":"jitsiTriggerMessage",
                          "type":"string",
-                         "value":"Voulez-vous lancer la conf\u00e9rence en TV Room"
+                         "value":"Voulez-vous lancer la conf\u00e9rence en TV Room ?"
                         }],
                  "rotation":0,
                  "type":"area",
