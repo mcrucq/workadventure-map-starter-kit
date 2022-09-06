@@ -1437,7 +1437,7 @@
                 {
                  "name":"openWebsiteTriggerMessage",
                  "type":"string",
-                 "value":""
+                 "value":"Bienvenue dans le Convention Center.  Cliquez sur ESPACE pour lancer le direct."
                 }],
          "type":"tilelayer",
          "visible":true,
