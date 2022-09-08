@@ -2036,12 +2036,12 @@
         {
          "name":"mapCopyright",
          "type":"string",
-         "value":"BRAINSONIC"
+         "value":"Brainsonic"
         }, 
         {
          "name":"mapDescription",
          "type":"string",
-         "value":""
+         "value":"Bienvenue sur Brainsonic Island !"
         }, 
         {
          "name":"mapImage",
@@ -2056,7 +2056,7 @@
         {
          "name":"mapName",
          "type":"string",
-         "value":"Brainsonic"
+         "value":"Brainsonic Island"
         }, 
         {
          "name":"script",
